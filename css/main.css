@@ -164,6 +164,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 footer .copyright {
@@ -178,8 +179,6 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  border: solid 1px red;
-
 }
 
 /* Aside */
@@ -221,7 +220,7 @@ aside .form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row-wrap;
+  flex-flow: row wrap;
 
 }
 
