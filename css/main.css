@@ -137,6 +137,7 @@ header nav ul {
   width: 100%;
   height: 1px;
   margin: 15px 0 15px 0;
+  border: solid 1px red;
 }
 
 header img {
@@ -190,12 +191,29 @@ aside {
   flex-flow: row wrap;
 }
 
+form .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 aside .form-description {
 
 }
 
 aside .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
 
+}
+
+aside input {
+  width: 100%;
+  margin-bottom: 6px;
 }
 
 /* Features */
@@ -373,16 +391,156 @@ aside .form {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  /*General styles*/
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+  /*Header*/
+
+  header {
+    
+  }
+  header .content-wrapper {
+    justify-content: space-between;
+    flex-flow: nowrap;
+    width: 100%;
+  }
+  
+  header img {
+    width: 50%;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /*Hero Area*/
+
+  /*Aside*/
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 50px 0;
+   
+
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 50%;
+    margin: 0;
+  }
+
+  aside .content-wrapper .form {
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  
+
+  /*Features*/
+
+  .features .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .features article {
+   
+   flex-basis: 50%;
+  } 
+  
+  .features .features-item-description {
+    
+    text-align: center;
+    padding: 0 20px
+  }
+
+
+
+
+  /*Reviews*/
+
+  .reviews .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    
+  }
+  .reviews article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+ 
+  .reviews img {
+    padding-right: 10px;
+  }
+  .reviews .review-subheading-paragraph {
+    padding-left: 10px;
+  }
+
+  /*Footer*/
+
+  footer .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  footer .contact, 
+  footer .social{
+    width: 50%;
+    text-align: center;
+  }
+
+  footer .copyright {
+    width: 25%;
+  }
+
+
+
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
 }
+
 
 /* ==========================================================================
    Print styles.
