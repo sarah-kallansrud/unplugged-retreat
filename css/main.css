@@ -266,12 +266,35 @@ aside .form {
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-top: 30px;
 
 }
 
-aside input {
+/*aside input {
   width: 100%;
   margin-bottom: 6px;
+}*/
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #9d9ea4;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
