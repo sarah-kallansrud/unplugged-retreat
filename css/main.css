@@ -113,12 +113,14 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: lighter;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: lighter;
 }
 
 p {
@@ -157,6 +159,8 @@ footer {
 
 header {
   padding: 15px 0;
+  background-color: #202322;
+
 }
 
 header .content-wrapper {
@@ -180,6 +184,9 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.125em;
 }
 
 
@@ -188,7 +195,7 @@ header nav ul {
   width: 100%;
   height: 1px;
   margin: 15px 0 15px 0;
-  border: solid 1px red;
+  border-top: solid 1px #3a3a3a;
 }
 
 header img {
@@ -198,6 +205,8 @@ header img {
 
 footer {
   flex-direction: column;
+  justify-content: center;
+  background-color: #202322;
 }
 
 footer .content-wrapper {
@@ -240,6 +249,11 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+}
+
 /* Aside */
 
 aside {
@@ -247,6 +261,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 form .content-wrapper {
@@ -270,11 +285,6 @@ aside .form {
 
 }
 
-/*aside input {
-  width: 100%;
-  margin-bottom: 6px;
-}*/
-
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -286,7 +296,7 @@ input[type=text] {
 input[type=button] {
   width: 100%;
   padding: 20px 0;
-  margin-top: 20px;
+  margin: 20px 0 50px 0;
   background-color: #2a423a;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -333,10 +343,12 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+
 }
 
-.reviews .review-subheading-paragraph {
- 
+.reviews p {
+  margin-bottom: 45px;
 }
 
 
@@ -351,10 +363,15 @@ input[type=button] {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
+   }
+
+   .mission h2 {
+     margin-top: 45px;
    }
 
    .mission .mission-content {
-
+    margin-bottom: 50px;
    }
 
    .contact-section {
@@ -362,6 +379,15 @@ input[type=button] {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
+  }
+
+  .contact-section h2 {
+    margin-top: 50px;
+  }
+
+  .contact-section .contact-content {
+    margin-bottom: 50px;
   }
 
 /* ==========================================================================
@@ -373,6 +399,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -380,6 +407,14 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-top: 50px;
+}
+
+.faq .faq-content {
+  margin-bottom: 50px;
 }
 
 
