@@ -208,6 +208,7 @@ header nav ul {
 footer {
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   background-color: #202322;
 }
 
@@ -350,6 +351,12 @@ input[type=button] {
 
 .features p {
   margin: 0;
+  text-align: center;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /*--------------------------- Reviews ----------------------------*/
